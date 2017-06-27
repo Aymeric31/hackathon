@@ -1,0 +1,10 @@
+#progressbar {
+    width: 6em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.ui-widget-header {
+    /*background-color: red !important; */
+}
