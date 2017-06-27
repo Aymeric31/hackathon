@@ -1,10 +1,29 @@
-#progressbar {
-    width: 6em;
-    height: 2em;
-    border: 1px solid black;
-    border-radius: 3px;
+.centrebutton{
+	margin-left:auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
 }
 
-.ui-widget-header {
-    /*background-color: red !important; */
+.blue{
+	background:rgb(15, 101, 162);
+}
+
+h1 small{
+	color:white;
+}
+
+label{
+	color: white;
+}
+
+legend{
+	color:white;
+}
+
+#progressbar {
+	width: 6em;
+	height: 2em;
+	border: 1px solid black;
+	border-radius: 3px;
 }
