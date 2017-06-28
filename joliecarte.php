@@ -17,19 +17,17 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $(function() {
-            var x = 10 * 100 / 10;
+            var x = 30
             $("#progressbar").progressbar({
                 value : 30
             });
+            $(".ui-widget-header").css("background-color", "green");
             if (x <= 50) {
                 $(".ui-widget-header").css("background-color", "red");
             };
-            // else {
-            //     $(".ui-widget-header").css("background-color", "green");
-            // }
         // console.log($("#progressbar").val)
 
-        //var1 x 100 / var2;
+        //anneeprec x 100 / annecourante;
     })
     })
 </script>
