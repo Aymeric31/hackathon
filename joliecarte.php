@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Edenis</title>
     <link rel="stylesheet" href="node_modules/mini.css/dist/mini-default.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map_mende/01_enedis/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 </head>
 <body>

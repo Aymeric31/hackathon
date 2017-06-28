@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="iframe_01_enedis.css" type="text/css">
-    <title>Enedis</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<title>Enedis</title>
 <script type="text/javascript" src="../../src/b4w.js"></script>
 <script type="text/javascript" src="../../src/anchors.js"></script>
 <script type="text/javascript" src="../../src/animation.js"></script>
@@ -109,28 +110,35 @@
 <script type="text/javascript" src="../../src/addons/screenshooter.js"></script>
 <script type="text/javascript" src="../../src/addons/storage.js"></script>
 <script type="text/javascript" src="../../src/addons/ns_compat.js"></script>
+<script src="../../node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 <body>
+
     <iframe id="iframe_1"width="800" height="500" allowfullscreen src="01_enedis_map.html"></iframe>
     <iframe id="iframe_2"width="200" height="200" allowfullscreen src="01_enedis_obj.html"></iframe>
     <div id="progressbar">
 
     </div>
     <script type="text/javascript">
+        var anneeprec = 5000;
+        var annecourante = 13000;
         $(document).ready(function() {
             $(function() {
-                var x = 30
+                var x = anneeprec * 100 / annecourante;
+                console.log(x);
                 $("#progressbar").progressbar({
-                    value : 30
-                });
+                    value : anneeprec * 100 / annecourante
+                })
                 $(".ui-widget-header").css("background-color", "green");
                 if (x <= 50) {
                     $(".ui-widget-header").css("background-color", "red");
-                };
-            // console.log($("#progressbar").val)
+                }
+//             console.log($("#progressbar").val)
 
             //anneeprec x 100 / annecourante;
-        })
+            });
         })
     </script>
 </body>
