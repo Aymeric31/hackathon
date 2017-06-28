@@ -7,6 +7,14 @@
 
 .blue{
 	background:rgb(15, 101, 162);
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+#title{
+	text-align: center;
+	color: white;
+	padding-bottom: 20px;
 }
 
 h1 small{
