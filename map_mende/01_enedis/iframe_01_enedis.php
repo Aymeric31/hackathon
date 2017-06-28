@@ -113,5 +113,25 @@
 <body>
     <iframe id="iframe_1"width="800" height="500" allowfullscreen src="01_enedis_map.html"></iframe>
     <iframe id="iframe_2"width="200" height="200" allowfullscreen src="01_enedis_obj.html"></iframe>
+    <div id="progressbar">
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(function() {
+                var x = 30
+                $("#progressbar").progressbar({
+                    value : 30
+                });
+                $(".ui-widget-header").css("background-color", "green");
+                if (x <= 50) {
+                    $(".ui-widget-header").css("background-color", "red");
+                };
+            // console.log($("#progressbar").val)
+
+            //anneeprec x 100 / annecourante;
+        })
+        })
+    </script>
 </body>
 </html>
